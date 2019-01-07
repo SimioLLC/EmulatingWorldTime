@@ -1,0 +1,104 @@
+Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
+0,--,--,--,--,System initialization completed.
+0,Model,Model,0.OnRunInitialized,[Begin],Process 'OnRunInitialized' execution started.
+0,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '2.77777777777778E-05' Hours.
+0,--,--,--,--,Firing event 'Timer1.Event'.
+0,--,--,--,--,Firing event 'Source1.EntityArrivals.Event'.
+0,Source1,Source1,1.OnEntityArrival,[Begin],Process 'Source1.OnEntityArrival' execution started.
+0,Source1,Source1,1.OnEntityArrival,[Create] Entities,Creating '1' object(s) of entity type 'DefaultEntity' using creation method 'NewObject'.
+0,--,--,--,--,Object 'DefaultEntity.16' created.
+0,DefaultEntity.16,Source1,2.OnEntityArrival,[Transfer] ToProcessing,Entity 'DefaultEntity.16' transferring from '[FreeSpace] Source1' into station 'Source1.Processing'.
+0,Source1,Source1,1.OnEntityArrival,[End],Process 'Source1.OnEntityArrival' execution ended.
+0,DefaultEntity.16,Source1,3.OnEnteredProcessing,[Begin],Process 'Source1.OnEnteredProcessing' execution started.
+0,DefaultEntity.16,Source1,3.OnEnteredProcessing,[EndTransfer] IntoProcessing,Entity 'DefaultEntity.16' ending transfer into station 'Source1.Processing'.
+0,DefaultEntity.16,Source1,3.OnEnteredProcessing,[Transfer] ToOutputBuffer,Entity 'DefaultEntity.16' transferring from '[Station] Source1.Processing' into station 'Source1.OutputBuffer'.
+0,DefaultEntity.16,Source1,2.OnEntityArrival,[End],Process 'Source1.OnEntityArrival' execution ended.
+0,DefaultEntity.16,Source1,1.OnEnteredOutputBuffer,[Begin],Process 'Source1.OnEnteredOutputBuffer' execution started.
+0,DefaultEntity.16,Source1,1.OnEnteredOutputBuffer,[EndTransfer] IntoOutputBuffer,Entity 'DefaultEntity.16' ending transfer into station 'Source1.OutputBuffer'.
+0,DefaultEntity.16,Source1,1.OnEnteredOutputBuffer,[Transfer] ToOutputNode,Entity 'DefaultEntity.16' transferring from '[Station] Source1.OutputBuffer' into node 'Output@Source1'.
+0,DefaultEntity.16,Output@Source1,2.OnEnteredFromAssociatedObject,[Begin],Process 'Output@Source1.OnEnteredFromAssociatedObject' execution started.
+0,DefaultEntity.16,Output@Source1,2.OnEnteredFromAssociatedObject,[Fire] EnteredEvent,Firing event 'Output@Source1.Entered'.
+0,DefaultEntity.16,Output@Source1,2.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'DefaultEntity.16' transferring from '[Node] Output@Source1' onto link 'Path1'.
+0,DefaultEntity.16,Path1,4.OnEntered,[Begin],Process 'Path1.OnEntered' execution started.
+0,DefaultEntity.16,Path1,4.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'DefaultEntity.16.Movement.Rate' the value '5040' Meters per Hour. Previous value was '5040' Meters per Hour.
+0,DefaultEntity.16,Path1,4.OnEntered,[EndTransfer] OntoPath,Entity 'DefaultEntity.16' ending transfer onto link 'Path1'.
+0,DefaultEntity.16,Path1,4.OnEntered,[End],Process 'Path1.OnEntered' execution ended.
+0,DefaultEntity.16,Source1,3.OnEnteredProcessing,[End],Process 'Source1.OnEnteredProcessing' execution ended.
+0,DefaultEntity.16,Source1,1.OnEnteredOutputBuffer,[End],Process 'Source1.OnEnteredOutputBuffer' execution ended.
+0,DefaultEntity.16,Output@Source1,2.OnEnteredFromAssociatedObject,[End],Process 'Output@Source1.OnEnteredFromAssociatedObject' execution ended.
+2.77777777777778E-05,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+2.77777777777778E-05,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+2.77777777777778E-05,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '5.55555555555556E-05' Hours.
+5.55555555555556E-05,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+5.55555555555556E-05,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+5.55555555555556E-05,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '8.33333333333333E-05' Hours.
+8.33333333333333E-05,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+8.33333333333333E-05,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+8.33333333333333E-05,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000111111111111111' Hours.
+9.92063492063492E-05,DefaultEntity.16,Output@Source1,2.OnExited,[Begin],Process 'Output@Source1.OnExited' execution started.
+9.92063492063492E-05,DefaultEntity.16,Output@Source1,2.OnExited,[Fire] ExitedEvent,Firing event 'Output@Source1.Exited'.
+9.92063492063492E-05,DefaultEntity.16,Output@Source1,2.OnExited,[End],Process 'Output@Source1.OnExited' execution ended.
+0.000111111111111111,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000111111111111111,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000111111111111111,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000138888888888889' Hours.
+0.000138888888888889,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000138888888888889,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000138888888888889,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000166666666666667' Hours.
+0.000166666666666667,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000166666666666667,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000166666666666667,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000194444444444444' Hours.
+0.000194444444444444,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000194444444444444,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000194444444444444,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000222222222222222' Hours.
+0.000222222222222222,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000222222222222222,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000222222222222222,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.00025' Hours.
+0.00025,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.00025,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.00025,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000277777777777778' Hours.
+0.000277777777777778,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000277777777777778,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000277777777777778,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000305555555555556' Hours.
+0.000305555555555556,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000305555555555556,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000305555555555556,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000333333333333333' Hours.
+0.000333333333333333,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000333333333333333,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000333333333333333,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000361111111111111' Hours.
+0.000361111111111111,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000361111111111111,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000361111111111111,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000388888888888889' Hours.
+0.000388888888888889,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000388888888888889,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000388888888888889,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000416666666666667' Hours.
+0.000416666666666667,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000416666666666667,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000416666666666667,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000444444444444444' Hours.
+0.000444444444444444,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000444444444444444,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000444444444444444,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000472222222222222' Hours.
+0.000472222222222222,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000472222222222222,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000472222222222222,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.0005' Hours.
+0.0005,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.0005,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.0005,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000527777777777778' Hours.
+0.000527777777777778,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000527777777777778,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000527777777777778,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000555555555555556' Hours.
+0.000555555555555556,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000555555555555556,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000555555555555556,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000583333333333333' Hours.
+0.000583333333333333,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000583333333333333,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000583333333333333,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000611111111111111' Hours.
+0.000611111111111111,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000611111111111111,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000611111111111111,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000638888888888889' Hours.
+0.000638888888888889,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000638888888888889,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000638888888888889,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000666666666666667' Hours.
+0.000666666666666667,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token branching on condition 'True'.
+0.000666666666666667,Model,Model,0.OnRunInitialized,[Decide] Decide2,Token sent to 'True' exit.
+0.000666666666666667,Model,Model,0.OnRunInitialized,[Delay] Delay2,Delaying token for '2.77777777777778E-05' Hours until time '0.000694444444444445' Hours.
+
