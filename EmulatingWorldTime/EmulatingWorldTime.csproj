@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Users\dan_h\Documents\SimioUserExtensions\</OutputPath>
+    <OutputPath>c:\Users\dan_h\Documents\SimioUserExtensions\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeviceStep.cs" />
     <Compile Include="EmulatingWorldTimeSingleton.cs" />
     <Compile Include="EmulatingWorldTimeStep.cs" />
     <Compile Include="EntityDataSingleton.cs" />

@@ -27,7 +27,7 @@ namespace EmulatingWorldTime
         /// </summary>
         public string Description
         {
-            get { return "Description text for the 'DeviceStep' step."; }
+            get { return "A simple Device communication (file drop) step."; }
         }
 
         /// <summary>
